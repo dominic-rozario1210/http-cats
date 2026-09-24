@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #e7dfdf;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 220px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.input input:focus {
+    border-color: blue;
+}
+
+.input button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: blue;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.input button:hover {
+    background-color: rgb(25, 25, 95);
+}
+
+#message {
+    min-height: 20px;
+
+    margin-bottom: 15px;
+
+    color: red;
+
+    font-size: 15px;
+}
+
+.image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    .input button {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+}
